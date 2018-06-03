@@ -1,1 +1,1 @@
-EasyTranslate.api_key = "AIzaSyAUlbZBD0elaJ1sYp-Jn9kOFxokfyjWOEc"
+EasyTranslate.api_key = Rails.application.credentials.development[:google_translate_api_key]
