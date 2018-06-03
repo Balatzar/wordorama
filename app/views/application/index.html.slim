@@ -1,0 +1,10 @@
+h1 Welcome to Wordorama
+
+form
+  input type="text" placeholder="Your word here" name="word"
+  button type="submit" Submit
+
+- if @translations
+  ul
+    - @translations.each do |translation|
+      li = "#{translation[0]}: #{translation[1]}"
