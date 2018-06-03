@@ -8,3 +8,9 @@ form
   ul
     - @translations.each do |translation|
       li = "#{translation[0]}: #{translation[1]}"
+
+javascript:
+  document.querySelector("form").addEventListener("submit", function() {
+    document.querySelector("button").disabled = true
+    document.querySelector("button").innerText = "Loading"
+  })
